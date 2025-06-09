@@ -32,6 +32,10 @@ return {
 						-- require("cmp.config").set_onetime({ sources = {} })
 					end,
 				},
+<<<<<<< HEAD
+=======
+
+>>>>>>> new-branch
 				window = {
 					completion = cmp.config.window.bordered(),
 					documentation = cmp.config.window.bordered(),
@@ -53,6 +57,11 @@ return {
 					{ name = "buffer" },
 				}),
 			})
+<<<<<<< HEAD
+=======
+        local cmp_autopairs = require("nvim-autopairs.completion.cmp")
+        cmp.event:on("confirm_done", cmp_autopairs.on_confirm_done())
+>>>>>>> new-branch
 		end,
 	}
 }
